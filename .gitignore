@@ -1,0 +1,143 @@
+# =========================
+# Standard .gitignore for this repository
+# - Covers macOS, Python, packaging, virtualenvs, IDEs, test/coverage artifacts,
+#   logs, secrets and common node/docker artefacts.
+# - Tailored to this workspace which includes Python code and a `submodules/` folder.
+# =========================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon\r
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Editor temporary files
+*.swp
+*~
+
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+*.dylib
+*.pyd
+
+# Packaging / distribution
+build/
+dist/
+wheels/
+pip-wheel-metadata/
+*.egg-info/
+*.egg
+
+# Virtual environments and env files
+.venv/
+venv/
+env/
+ENV/
+venv.bak/
+.python-version
+.env
+.env.*
+
+# Hatch / Poetry / other tooling caches
+.hatch/
+.hatch_build/
+.mypy_cache/
+.pytest_cache/
+.tox/
+.nox/
+.cache/
+
+# Test / coverage
+.coverage
+coverage.xml
+htmlcov/
+
+# -------------------------
+# IDEs, editors
+# -------------------------
+.vscode/
+.idea/
+*.iml
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+
+# -------------------------
+# Logs, runtime files
+# -------------------------
+logs/
+*.log
+*.log.*
+*.pid
+*.seed
+
+# -------------------------
+# Secrets / credentials
+# -------------------------
+# Ignore obvious secret patterns. If you intentionally track a secrets file, remove
+# the pattern or keep an example file (e.g. fastagent.secrets.yaml.example).
+*.secrets
+*.secrets.yaml
+*.key
+*.pem
+*.crt
+local_settings.py
+instance/
+
+# -------------------------
+# Jupyter
+# -------------------------
+.ipynb_checkpoints/
+*.ipynb
+
+# -------------------------
+# Node / JS (some examples/subprojects may have node code)
+# -------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# -------------------------
+# Docker / container
+# -------------------------
+.docker/
+.dockerignore
+docker-compose.override.yml
+
+# -------------------------
+# Static / media / caches
+# -------------------------
+staticfiles/
+media/
+*.cache
+
+# -------------------------
+# Submodules / third-party build outputs
+# -------------------------
+# Do not ignore the submodule sources themselves. Only ignore build/dist artifacts
+# that are produced inside submodules during builds.
+/submodules/**/build/
+/submodules/**/dist/
+/submodules/**/pip-wheel-metadata/
+/submodules/**/**/*.egg-info/
+
+# -------------------------
+# Misc
+# -------------------------
+*.log
+*.tmp
+
+# End of file
